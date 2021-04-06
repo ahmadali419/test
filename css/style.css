@@ -1,0 +1,45 @@
+*{
+			margin:0;
+			padding:0;
+			font-family: 'Open Sans', sans-serif;
+		}
+		.nav{
+			height:100px;
+
+			background:#81ecec;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+		}
+		.logo{
+			width:40%;
+			padding-left:55px;
+		}
+		.menu{
+			width:60%;
+			display:flex;
+			justify-content: space-around;
+			align-items: center;
+		}
+		.menu a{
+			text-decoration: none;
+			color:black;
+			font-weight: bold;
+			position:relative;
+		}
+		.menu a:before{
+			content:"";
+			position:absolute;
+			left:0;
+			top:100%;
+			width: 0%;
+			height:2px;
+			background-color: #000;
+			transition: all 0.5s linear;
+
+		}
+		.menu a:hover:before{
+			width:100%;
+			background-color: blue;
+
+		}
